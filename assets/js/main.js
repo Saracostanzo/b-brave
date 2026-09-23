@@ -250,6 +250,14 @@
         return window.I18N_T ? window.I18N_T('form.error.' + key) : 'Campo non valido';
       }
 
+      function fieldLabel(field) {
+        // long labels (the consent checkbox) carry a short name for the summary
+        var short = field.dataset.labelKey;
+        if (short && window.I18N_T) return window.I18N_T(short);
+        var label = form.querySelector('label[for="' + field.id + '"]');
+        return label ? label.textContent.replace('*', '').trim() : field.name;
+      }
+
       function describe(field, message) {
         var error = form.querySelector('#' + field.id + '-error');
         if (error) error.textContent = message || '';
@@ -283,9 +291,7 @@
               var li = document.createElement('li');
               var link = document.createElement('a');
               link.href = '#' + entry.field.id;
-              var label = form.querySelector('label[for="' + entry.field.id + '"]');
-              link.textContent = (label ? label.textContent.replace('*', '').trim() : entry.field.name) +
-                ' — ' + entry.message;
+              link.textContent = fieldLabel(entry.field) + ' — ' + entry.message;
               link.addEventListener('click', function (clickEvent) {
                 clickEvent.preventDefault();
                 entry.field.focus();

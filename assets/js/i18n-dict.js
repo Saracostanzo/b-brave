@@ -431,6 +431,12 @@ window.I18N = {
     'contacts.data.vat': 'P. IVA',
     'contacts.data.rea': 'Registro Imprese',
     'contacts.data.capital': 'Capitale sociale'
+,
+
+    /* --- runtime strings ----------------------------------------------------- */
+    'common.footer.legal': 'Sede legale: Lecce — Via E. Estrafallaces, 2 · P. IVA 05142810752 · Registro Imprese Lecce 05142810752 C.C.I.A.A. Lecce · Capitale sociale Euro 40.000,00 i.v.',
+    'form.short.privacy': 'Consenso privacy',
+    'insights.count': 'Articoli visibili: {n}'
   },
 
   /* ======================================================================
@@ -859,5 +865,11 @@ window.I18N = {
     'contacts.data.vat': 'VAT number',
     'contacts.data.rea': 'Companies Register',
     'contacts.data.capital': 'Share capital'
+,
+
+    /* --- runtime strings ----------------------------------------------------- */
+    'common.footer.legal': 'Registered office: Lecce — Via E. Estrafallaces, 2 · VAT 05142810752 · Lecce Companies Register 05142810752 C.C.I.A.A. Lecce · Share capital EUR 40,000.00 fully paid up',
+    'form.short.privacy': 'Privacy consent',
+    'insights.count': 'Articles shown: {n}'
   }
 };
