@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.weare.title">Chi siamo — B-Brave</title>
+<meta name="description" data-i18n-attr="content:meta.weare.desc" content="B-Brave è una società di consulenza e progettazione software con sede a Lecce, parte dell'ecosistema SellaLab. Capitale umano, competenza, innovazione.">
+<meta property="og:type" content="website">
+<meta property="og:title" data-i18n-attr="content:meta.weare.title" content="Chi siamo — B-Brave">
+<meta property="og:description" data-i18n-attr="content:meta.weare.desc" content="B-Brave è una società di consulenza e progettazione software con sede a Lecce, parte dell'ecosistema SellaLab. Capitale umano, competenza, innovazione.">
+<meta property="og:image" content="./assets/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/css/tokens.css">
+<link rel="stylesheet" href="./assets/css/base.css">
+<link rel="stylesheet" href="./assets/css/components.css">
+<link rel="stylesheet" href="./assets/css/pages.css">
+<script>
+  document.documentElement.classList.add('js');
+  try {
+    var t = localStorage.getItem('bb-theme');
+    if (t) document.documentElement.dataset.theme = t;
+    var l = localStorage.getItem('bb-lang');
+    if (l && l !== 'it') document.documentElement.lang = l;
+  } catch (e) {}
+</script>
+</head>
+
+<body data-page="weare">
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Vai al contenuto</a>
+
+<header class="header" id="site-header">
+  <div class="container header__inner">
+    <a class="logo" href="./index.html">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <circle cx="16" cy="16" r="13" stroke-width="1.6"/>
+          <path d="M16 16 16 3M16 16 27.3 9.5M16 16 6.3 24.7M16 3 4.7 9.5M27.3 9.5 25.7 24.7M25.7 24.7 6.3 24.7" stroke-width="1.2"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="16" cy="3" r="2"/><circle cx="27.3" cy="9.5" r="2"/>
+          <circle cx="25.7" cy="24.7" r="2"/><circle cx="6.3" cy="24.7" r="2"/>
+          <circle cx="4.7" cy="9.5" r="2"/><circle cx="16" cy="16" r="2.7"/>
+        </g>
+      </svg>
+      <span class="logo__word">b-brave</span>
+    </a>
+
+    <nav class="header__nav" id="site-nav" data-i18n-attr="aria-label:a11y.nav.main" aria-label="Navigazione principale">
+      <ul class="nav-list">
+        <li><a href="./we-do.html" data-i18n="common.nav.wedo">Cosa facciamo</a></li>
+        <li><a href="./we-are.html" data-i18n="common.nav.weare" aria-current="page">Chi siamo</a></li>
+        <li><a href="./expertise.html" data-i18n="common.nav.expertise">Competenze</a></li>
+        <li><a href="./insights.html" data-i18n="common.nav.insights">Insights</a></li>
+        <li><a href="./careers.html" data-i18n="common.nav.careers">Lavora con noi</a></li>
+      </ul>
+      <a class="btn btn--primary btn--panel" href="./contacts.html" data-i18n="common.cta.talk">Parliamone</a>
+    </nav>
+
+    <div class="header__tools">
+      <div class="lang" role="group" data-i18n-attr="aria-label:a11y.lang.group" aria-label="Lingua del sito">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="theme-toggle" type="button" id="theme-toggle" data-i18n-attr="aria-label:a11y.theme" aria-label="Cambia tema chiaro o scuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>
+        </svg>
+      </button>
+
+      <a class="btn btn--primary header__cta" href="./contacts.html" data-i18n="common.cta.talk">Parliamone</a>
+
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-i18n-attr="aria-label:a11y.menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- page hero ------------------------------------------------------------ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <p class="label" data-i18n="weare.hero.eyebrow">Chi siamo</p>
+        <h1 data-i18n="weare.hero.title">Le opportunità incontrano la tecnologia.</h1>
+        <p class="lead" data-i18n="weare.hero.lead">B-Brave è una società di consulenza e progettazione software. Siamo nati per portare sul mercato competenze specifiche e per integrare le tecnologie digitali dentro le decisioni aziendali, non accanto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- about ------------------------------------------------------------------- -->
+  <section class="band">
+    <div class="container about">
+      <div class="about__text">
+        <div class="section-head">
+          <p class="label" data-i18n="weare.about.label">L’azienda</p>
+          <h2 data-i18n="weare.about.title">Una squadra piccola che lavora su sistemi grandi</h2>
+        </div>
+        <div class="stack">
+          <p data-i18n="weare.about.p1">Lavoriamo con i nostri clienti per capire di cosa hanno bisogno davvero e consegnare soluzioni costruite su quel bisogno. Non è una frase di circostanza: è il motivo per cui la fase di analisi occupa più tempo di quanto la maggior parte dei fornitori accetti di dedicarle.</p>
+          <p data-i18n="weare.about.p2">L’efficienza della struttura e la preparazione tecnica delle persone ci permettono di costruire soluzioni personalizzate senza allungare i tempi. La formazione continua, orientata ad approfondire le competenze specialistiche nell’ambito IT, è il nostro valore aggiunto.</p>
+          <p data-i18n="weare.about.p3">Adottiamo processi agili e orientati all’obiettivo: tempi di produzione rapidi e una risposta concreta a ogni esigenza specifica del cliente.</p>
+        </div>
+      </div>
+
+      <aside class="about__id">
+        <p class="label" data-i18n="weare.about.idLabel">Identità</p>
+        <dl class="company-data">
+          <div><dt data-i18n="contacts.data.company">Ragione sociale</dt><dd>B-Brave S.r.l.</dd></div>
+          <div><dt data-i18n="contacts.data.office">Sede legale</dt><dd>Via E. Estrafallaces, 2 — 73100 Lecce</dd></div>
+          <div><dt data-i18n="weare.about.ecosystem">Ecosistema</dt><dd>SellaLab — gruppo Sella</dd></div>
+          <div><dt data-i18n="weare.about.sectors">Settori</dt><dd>Healthcare · Finance · Manufacturing</dd></div>
+          <div><dt data-i18n="weare.about.services">Servizi</dt><dd data-i18n="weare.about.servicesValue">Consulenza, progettazione e sviluppo software</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- pillars ------------------------------------------------------------------ -->
+  <section class="band band--soft">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="weare.pillars.label">Come stiamo in piedi</p>
+        <h2 data-i18n="weare.pillars.title">Tre cose su cui non facciamo sconti</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <p class="card__num">01</p>
+          <h3 data-i18n="weare.pillars.a.title">Capitale umano</h3>
+          <p data-i18n="weare.pillars.a.body">Alla base di tutto ci sono le persone e la loro capacità di trasformare idee in progetti. Il benessere di chi lavora qui è un valore primario, non un capitolo del bilancio sociale.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">02</p>
+          <h3 data-i18n="weare.pillars.b.title">Competenza</h3>
+          <p data-i18n="weare.pillars.b.body">Una struttura organizzativa efficiente e persone preparate ci permettono di costruire soluzioni su misura ed efficaci. La formazione continua è parte del lavoro.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">03</p>
+          <h3 data-i18n="weare.pillars.c.title">Innovazione</h3>
+          <p data-i18n="weare.pillars.c.body">Mettiamo insieme competenza tecnica e creatività. Sviluppare e applicare nuove tecnologie serve a creare valore e a migliorare processi, prodotti e servizi: se non succede, non è innovazione.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- manifesto ----------------------------------------------------------------- -->
+  <section class="band band--ink manifesto">
+    <div class="container container--narrow">
+      <blockquote>
+        <p data-i18n="common.manifesto.quote">Abbiamo il coraggio di affrontare le sfide, di prenderci dei rischi e di difendere ciò in cui crediamo, anche quando è difficile e scomodo.</p>
+      </blockquote>
+      <p class="manifesto__claim">Go The Extra Mile!</p>
+    </div>
+  </section>
+
+  <!-- how we work ---------------------------------------------------------------- -->
+  <section class="band">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="weare.work.label">Come lavoriamo</p>
+        <h2 data-i18n="weare.work.title">Quattro abitudini, non quattro valori appesi al muro</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <h3 data-i18n="weare.work.a.title">Cicli corti</h3>
+          <p data-i18n="weare.work.a.body">Consegniamo spesso e correggiamo presto, invece di scoprire alla fine che avevamo capito male.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3 data-i18n="weare.work.b.title">Obiettivi, non compiti</h3>
+          <p data-i18n="weare.work.b.body">Chi lavora a un problema sa perché esiste e cosa deve cambiare quando sarà risolto.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3 data-i18n="weare.work.c.title">Ambiente informale</h3>
+          <p data-i18n="weare.work.c.body">Ci si parla senza passaggi intermedi. Le gerarchie servono a decidere, non a filtrare le domande.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3 data-i18n="weare.work.d.title">Responsabilità diretta</h3>
+          <p data-i18n="weare.work.d.body">Chi costruisce una cosa la segue anche dopo il rilascio. È il modo più rapido per imparare a farla bene.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- territory ------------------------------------------------------------------- -->
+  <section class="band band--soft">
+    <div class="container territory">
+      <div>
+        <div class="section-head">
+          <p class="label" data-i18n="weare.territory.label">Territorio</p>
+          <h2 data-i18n="weare.territory.title">Da Lecce, con clienti in tutta Italia</h2>
+        </div>
+        <div class="stack">
+          <p data-i18n="weare.territory.p1">La sede è in Puglia e ci restiamo per scelta. Le competenze non hanno bisogno di trasferirsi altrove per valere, e il lavoro da remoto ha smesso da tempo di essere un compromesso.</p>
+          <p data-i18n="weare.territory.p2">Siamo parte dell’ecosistema SellaLab, la piattaforma di innovazione a impatto del gruppo Sella che mette a disposizione delle aziende una rete di PMI innovative e startup.</p>
+        </div>
+        <a class="link-arrow" href="./careers.html">
+          <span data-i18n="weare.territory.cta">Vedi i profili che cerchiamo</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="territory__figure">
+        <svg viewBox="0 0 300 300" class="diagram" role="img" data-i18n-attr="aria-label:weare.territory.alt">
+          <g class="diagram__lane">
+            <circle cx="150" cy="150" r="128"/>
+            <circle cx="150" cy="150" r="82"/>
+            <circle cx="150" cy="150" r="36"/>
+          </g>
+          <g class="diagram__flow">
+            <path d="M150 150 98 62M150 150 244 118M150 150 88 214M150 150 206 240M150 150 262 196"/>
+          </g>
+          <g class="diagram__accent">
+            <circle cx="98" cy="62" r="6"/><circle cx="244" cy="118" r="6"/>
+            <circle cx="88" cy="214" r="6"/><circle cx="206" cy="240" r="6"/>
+            <circle cx="262" cy="196" r="6"/>
+            <circle cx="150" cy="150" r="10"/>
+          </g>
+          <g class="diagram__label">
+            <text x="150" y="182" text-anchor="middle">LECCE</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer band--ink">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="./index.html">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-linecap="round">
+              <circle cx="16" cy="16" r="13" stroke-width="1.6"/>
+              <path d="M16 16 16 3M16 16 27.3 9.5M16 16 6.3 24.7M16 3 4.7 9.5M27.3 9.5 25.7 24.7M25.7 24.7 6.3 24.7" stroke-width="1.2"/>
+            </g>
+            <g fill="currentColor">
+              <circle cx="16" cy="3" r="2"/><circle cx="27.3" cy="9.5" r="2"/>
+              <circle cx="25.7" cy="24.7" r="2"/><circle cx="6.3" cy="24.7" r="2"/>
+              <circle cx="4.7" cy="9.5" r="2"/><circle cx="16" cy="16" r="2.7"/>
+            </g>
+          </svg>
+          <span class="logo__word">b-brave</span>
+        </a>
+        <p class="footer__tagline" data-i18n="common.footer.tagline">Consulenza, progettazione e sviluppo software per Healthcare, Finance e Manufacturing.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/b-brave-software/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5M3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/bbravesrl/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav data-i18n-attr="aria-label:a11y.nav.footer" aria-label="Mappa del sito">
+        <h2 data-i18n="common.footer.sitemap">Sito</h2>
+        <div class="footer__links">
+          <a href="./we-do.html" data-i18n="common.nav.wedo">Cosa facciamo</a>
+          <a href="./we-are.html" data-i18n="common.nav.weare">Chi siamo</a>
+          <a href="./expertise.html" data-i18n="common.nav.expertise">Competenze</a>
+          <a href="./insights.html" data-i18n="common.nav.insights">Insights</a>
+          <a href="./careers.html" data-i18n="common.nav.careers">Lavora con noi</a>
+          <a href="./contacts.html" data-i18n="common.nav.contacts">Contatti</a>
+        </div>
+      </nav>
+
+      <div>
+        <h2 data-i18n="common.footer.contact">Contatti</h2>
+        <div class="footer__links">
+          <a href="mailto:info@b-brave.it">info@b-brave.it</a>
+          <span data-i18n="common.footer.address">Via E. Estrafallaces, 2 — 73100 Lecce</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p>Sede legale: Lecce — Via E. Estrafallaces, 2 · P. IVA 05142810752 · Registro Imprese Lecce 05142810752 C.C.I.A.A. Lecce · Capitale sociale Euro 40.000,00 i.v.</p>
+      <p>© <span id="year">2026</span> B-Brave S.r.l. · <span data-i18n="common.footer.nocookies">Questo concept non usa cookie e non raccoglie dati.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script defer src="./assets/js/i18n-dict.js"></script>
+<script defer src="./assets/js/i18n.js"></script>
+<script defer src="./assets/js/main.js"></script>
+</body>
+</html>
