@@ -1,6 +1,6 @@
 # b-brave — mockup di restyling
 
-Questo è il mockup del sito di cui abbiamo parlato. È un concept, non un sito pronto da mettere online: serve a far vedere una direzione e a capire se è quella giusta prima di investirci davvero.
+Questo è il mockup del sito di cui abbiamo parlato. È un concept: serve a far vedere una direzione e a capire se è quella giusta prima di investirci davvero, non a sostituire b-brave.it.
 
 Il rosso è rimasto quello. Non si discute.
 
