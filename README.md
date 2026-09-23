@@ -10,10 +10,11 @@ Il rosso è rimasto quello. Non si discute.
 
 ## Come lo apri
 
-1. Scarica lo ZIP del progetto e **estrai la cartella**.
-2. Apri `index.html` con un doppio clic.
+### → **[saracostanzo.github.io/b-brave](https://saracostanzo.github.io/b-brave/)**
 
-Una cosa sola, importante: **estrai la cartella prima di aprire il file**. Se fai doppio clic su `index.html` da dentro lo zip, Windows apre solo quel file e lascia fuori tutto il resto, quindi vedresti una pagina bianca senza grafica. Estratto, funziona subito: non serve installare niente, non serve un server, e funziona anche senza connessione.
+Si apre da qualsiasi browser, anche dal telefono. Non serve altro.
+
+Se preferisci averlo in locale: scarica lo ZIP, **estrai la cartella** e fai doppio clic su `index.html`. L'unica accortezza è estrarlo davvero — se apri `index.html` da dentro lo zip, Windows tira fuori solo quel file e lascia indietro grafica e script, quindi vedresti una pagina spoglia. Estratto funziona subito: niente da installare, niente server, funziona anche senza connessione.
 
 ## Cosa c'è dentro
 
@@ -73,6 +74,7 @@ Qualche scelta che vale la pena raccontare:
 - **La mappa dei contatti è disegnata da me**, non è un riquadro di Google Maps. Stesso risultato per chi guarda, senza chiamate esterne. Il link "Apri in Maps" c'è comunque.
 - **Tutto è usabile da tastiera** e con lettore di schermo: link di salto al contenuto, focus sempre visibile, menu mobile che non lascia scappare il cursore. Il contrasto dei testi rispetta le linee guida WCAG AA (il rosso su bianco è 5.4:1; sul fondo scuro uso una tonalità più chiara, altrimenti non passerebbe).
 - **Le animazioni si spengono da sole** se nel sistema è attiva l'opzione "riduci animazioni".
+- **Il sito è pubblicato con `noindex`** e un `robots.txt` che blocca tutto: è un concept, non deve finire nei risultati di Google accanto (o al posto) di b-brave.it.
 - Il sito funziona anche **con JavaScript disattivato**: si perdono solo l'interruttore della lingua e il menu a tendina del mobile.
 
 ## Cose che ho lasciato in sospeso
