@@ -56,7 +56,7 @@ Ho fatto un giro sul sito attuale prima di partire. Non per fare le pulci, ma pe
 | Qualche refuso nei testi in pagina ("Accompanyes", "Trasformation", "Analyitcs") | Testi riscritti e riletti in entrambe le lingue |
 | L'indirizzo dei contatti è `/contatcts/` | `contacts.html` |
 | Nei contatti non compaiono né email né telefono | Recapiti in evidenza, in cima alla pagina |
-| 42 richieste, 82 script e 30 fogli di stile solo per la home | 1 pagina, 4 fogli di stile, 3 script, 2 font, zero librerie esterne |
+| 42 richieste, 82 script e 30 fogli di stile solo per la home | 11 richieste e circa 190 KB in tutto, font compresi, zero librerie esterne |
 | Uno script pubblicitario (AdSense) su un sito B2B | Niente pubblicità, niente tracciamento |
 | Un widget di accessibilità sovrapposto alle pagine | Accessibilità scritta nel codice invece che appiccicata sopra |
 | Footer "Copyright 2023" | L'anno si aggiorna da solo |
