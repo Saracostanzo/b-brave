@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.careers.title">Lavora con noi — B-Brave</title>
+<meta name="description" data-i18n-attr="content:meta.careers.desc" content="Profili che cerchiamo, come funziona la selezione e come candidarsi in B-Brave. Sede a Lecce, progetti enterprise, responsabilità reale.">
+<meta property="og:type" content="website">
+<meta property="og:title" data-i18n-attr="content:meta.careers.title" content="Lavora con noi — B-Brave">
+<meta property="og:description" data-i18n-attr="content:meta.careers.desc" content="Profili che cerchiamo, come funziona la selezione e come candidarsi in B-Brave. Sede a Lecce, progetti enterprise, responsabilità reale.">
+<meta property="og:image" content="./assets/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/css/tokens.css">
+<link rel="stylesheet" href="./assets/css/base.css">
+<link rel="stylesheet" href="./assets/css/components.css">
+<link rel="stylesheet" href="./assets/css/pages.css">
+<script>
+  document.documentElement.classList.add('js');
+  try {
+    var t = localStorage.getItem('bb-theme');
+    if (t) document.documentElement.dataset.theme = t;
+    var l = localStorage.getItem('bb-lang');
+    if (l && l !== 'it') document.documentElement.lang = l;
+  } catch (e) {}
+</script>
+</head>
+
+<body data-page="careers">
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Vai al contenuto</a>
+
+<header class="header" id="site-header">
+  <div class="container header__inner">
+    <a class="logo" href="./index.html">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <circle cx="16" cy="16" r="13" stroke-width="1.6"/>
+          <path d="M16 16 16 3M16 16 27.3 9.5M16 16 6.3 24.7M16 3 4.7 9.5M27.3 9.5 25.7 24.7M25.7 24.7 6.3 24.7" stroke-width="1.2"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="16" cy="3" r="2"/><circle cx="27.3" cy="9.5" r="2"/>
+          <circle cx="25.7" cy="24.7" r="2"/><circle cx="6.3" cy="24.7" r="2"/>
+          <circle cx="4.7" cy="9.5" r="2"/><circle cx="16" cy="16" r="2.7"/>
+        </g>
+      </svg>
+      <span class="logo__word">b-brave</span>
+    </a>
+
+    <nav class="header__nav" id="site-nav" data-i18n-attr="aria-label:a11y.nav.main" aria-label="Navigazione principale">
+      <ul class="nav-list">
+        <li><a href="./we-do.html" data-i18n="common.nav.wedo">Cosa facciamo</a></li>
+        <li><a href="./we-are.html" data-i18n="common.nav.weare">Chi siamo</a></li>
+        <li><a href="./expertise.html" data-i18n="common.nav.expertise">Competenze</a></li>
+        <li><a href="./insights.html" data-i18n="common.nav.insights">Insights</a></li>
+        <li><a href="./careers.html" data-i18n="common.nav.careers" aria-current="page">Lavora con noi</a></li>
+      </ul>
+      <a class="btn btn--primary btn--panel" href="./contacts.html" data-i18n="common.cta.talk">Parliamone</a>
+    </nav>
+
+    <div class="header__tools">
+      <div class="lang" role="group" data-i18n-attr="aria-label:a11y.lang.group" aria-label="Lingua del sito">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="theme-toggle" type="button" id="theme-toggle" data-i18n-attr="aria-label:a11y.theme" aria-label="Cambia tema chiaro o scuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>
+        </svg>
+      </button>
+
+      <a class="btn btn--primary header__cta" href="./contacts.html" data-i18n="common.cta.talk">Parliamone</a>
+
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" data-i18n-attr="aria-label:a11y.menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- page hero ------------------------------------------------------------ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <p class="label" data-i18n="careers.hero.eyebrow">Lavora con noi</p>
+        <h1 data-i18n="careers.hero.title">Non cerchiamo curriculum perfetti. Cerchiamo persone che chiedono perché.</h1>
+        <p class="lead" data-i18n="careers.hero.lead">Lavoriamo su sistemi che le aziende usano tutti i giorni. Chi entra qui non guarda qualcuno lavorare: mette mano a cose che vanno in produzione.</p>
+        <nav class="anchor-nav" data-i18n-attr="aria-label:a11y.nav.section">
+          <a href="#perche" data-i18n="careers.nav.why">Perché qui</a>
+          <a href="#profili" data-i18n="careers.nav.roles">Profili che cerchiamo</a>
+          <a href="#selezione" data-i18n="careers.nav.process">Come funziona la selezione</a>
+          <a href="#candidatura" data-i18n="careers.nav.apply">Candidatura</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- why here ---------------------------------------------------------------- -->
+  <section class="band" id="perche">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="careers.why.label">Perché qui</p>
+        <h2 data-i18n="careers.why.title">Cosa possiamo dirvi con onestà</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <p class="card__num">01</p>
+          <h3 data-i18n="careers.why.a.title">Progetti veri, non esercizi</h3>
+          <p data-i18n="careers.why.a.body">Sistemi usati da ospedali, banche e stabilimenti. Quando qualcosa non funziona se ne accorge qualcuno, e questo cambia il modo di lavorare.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">02</p>
+          <h3 data-i18n="careers.why.b.title">Responsabilità presto</h3>
+          <p data-i18n="careers.why.b.body">Siamo una squadra piccola: nessuno resta per mesi a guardare. Si parte affiancati e si arriva in fretta a portare avanti un pezzo da soli.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">03</p>
+          <h3 data-i18n="careers.why.c.title">Processi agili, davvero</h3>
+          <p data-i18n="careers.why.c.body">Cicli corti e obiettivi chiari. Se una riunione non serve, non si fa; se una scelta è sbagliata, si cambia senza farne un caso.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">04</p>
+          <h3 data-i18n="careers.why.d.title">Ambiente informale</h3>
+          <p data-i18n="careers.why.d.body">Ci si dà del tu, si discute apertamente e si chiede aiuto senza preamboli. Le gerarchie servono a decidere, non a parlarsi.</p>
+        </article>
+        <article class="card" data-reveal>
+          <p class="card__num">05</p>
+          <h3 data-i18n="careers.why.e.title">Formazione continua</h3>
+          <p data-i18n="careers.why.e.body">Le competenze specialistiche sono il nostro valore aggiunto: tenerle aggiornate è parte del lavoro, non qualcosa da fare la sera.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- roles -------------------------------------------------------------------- -->
+  <section class="band band--soft" id="profili">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="careers.roles.label">Profili</p>
+        <h2 data-i18n="careers.roles.title">Chi cerchiamo più spesso</h2>
+        <p class="lead" data-i18n="careers.roles.lead">Non sono annunci con una scadenza: sono i profili su cui siamo quasi sempre disponibili a parlare. Se vi riconoscete anche solo in parte, scriveteci.</p>
+      </div>
+
+      <div class="accordion">
+        <details class="accordion__item">
+          <summary>
+            <span class="accordion__title" data-i18n="careers.role.backend.title">Sviluppatore back-end</span>
+            <span class="accordion__meta" data-i18n="careers.role.location">Lecce · ibrido</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="accordion__body">
+            <div>
+              <h3 data-i18n="careers.role.doing">Cosa farete</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.backend.d1">Progettare e mantenere i servizi che stanno sotto le nostre piattaforme</li>
+                <li data-i18n="careers.role.backend.d2">Integrare sistemi di terze parti che non sono stati pensati per parlarsi</li>
+                <li data-i18n="careers.role.backend.d3">Seguire il rilascio e il comportamento del codice dopo il go-live</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="careers.role.looking">Cosa cerchiamo</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.backend.l1">Solide basi di programmazione a oggetti e di modellazione dati</li>
+                <li data-i18n="careers.role.backend.l2">Abitudine a scrivere codice che qualcun altro dovrà leggere</li>
+                <li data-i18n="careers.role.backend.l3">Voglia di capire il processo aziendale prima di implementarlo</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion__item">
+          <summary>
+            <span class="accordion__title" data-i18n="careers.role.data.title">Data engineer</span>
+            <span class="accordion__meta" data-i18n="careers.role.location">Lecce · ibrido</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="accordion__body">
+            <div>
+              <h3 data-i18n="careers.role.doing">Cosa farete</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.data.d1">Costruire i flussi che portano i dati dalle sorgenti al data warehouse</li>
+                <li data-i18n="careers.role.data.d2">Definire i controlli di qualità su ciò che entra</li>
+                <li data-i18n="careers.role.data.d3">Preparare i modelli su cui poggiano i cruscotti di business intelligence</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="careers.role.looking">Cosa cerchiamo</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.data.l1">Ottima padronanza di SQL e dei modelli relazionali</li>
+                <li data-i18n="careers.role.data.l2">Esperienza, anche di studio, su processi ETL</li>
+                <li data-i18n="careers.role.data.l3">Attenzione al dettaglio: un dato sbagliato costa più di un bug</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion__item">
+          <summary>
+            <span class="accordion__title" data-i18n="careers.role.crm.title">Consulente applicativo CRM</span>
+            <span class="accordion__meta" data-i18n="careers.role.location">Lecce · ibrido</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="accordion__body">
+            <div>
+              <h3 data-i18n="careers.role.doing">Cosa farete</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.crm.d1">Raccogliere i requisiti commerciali e tradurli in configurazioni</li>
+                <li data-i18n="careers.role.crm.d2">Accompagnare i clienti nell’adozione, formazione compresa</li>
+                <li data-i18n="careers.role.crm.d3">Fare da ponte fra chi vende e chi sviluppa</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="careers.role.looking">Cosa cerchiamo</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.crm.l1">Capacità di ascoltare e di riformulare quello che avete capito</li>
+                <li data-i18n="careers.role.crm.l2">Dimestichezza con i processi commerciali e il post-vendita</li>
+                <li data-i18n="careers.role.crm.l3">Pazienza: l’adozione di uno strumento è un lavoro sulle persone</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion__item">
+          <summary>
+            <span class="accordion__title" data-i18n="careers.role.frontend.title">Sviluppatore front-end</span>
+            <span class="accordion__meta" data-i18n="careers.role.location">Lecce · ibrido</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="accordion__body">
+            <div>
+              <h3 data-i18n="careers.role.doing">Cosa farete</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.frontend.d1">Costruire le interfacce delle nostre piattaforme e dei progetti su misura</li>
+                <li data-i18n="careers.role.frontend.d2">Lavorare su schermate usate ogni giorno per ore, dove la fatica si sente</li>
+                <li data-i18n="careers.role.frontend.d3">Tenere insieme accessibilità, prestazioni e scadenze</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="careers.role.looking">Cosa cerchiamo</h3>
+              <ul class="tick-list">
+                <li data-i18n="careers.role.frontend.l1">Basi solide di HTML, CSS e JavaScript, prima dei framework</li>
+                <li data-i18n="careers.role.frontend.l2">Sensibilità per l’accessibilità e per chi usa la tastiera</li>
+                <li data-i18n="careers.role.frontend.l3">Cura del dettaglio senza perdere di vista la consegna</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- process ------------------------------------------------------------------ -->
+  <section class="band" id="selezione">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="careers.process.label">Selezione</p>
+        <h2 data-i18n="careers.process.title">Quattro passaggi, nessuna sorpresa</h2>
+      </div>
+
+      <ol class="steps" data-reveal>
+        <li class="step">
+          <p class="step__num">01</p>
+          <h3 data-i18n="careers.process.a.title">Leggiamo la candidatura</h3>
+          <p data-i18n="careers.process.a.body">Rispondiamo a tutti, anche quando è un no. Di solito entro una settimana.</p>
+        </li>
+        <li class="step">
+          <p class="step__num">02</p>
+          <h3 data-i18n="careers.process.b.title">Una chiacchierata</h3>
+          <p data-i18n="careers.process.b.body">Mezz’ora per capirsi: cosa avete fatto, cosa vi interessa, cosa facciamo noi. Senza domande a trabocchetto.</p>
+        </li>
+        <li class="step">
+          <p class="step__num">03</p>
+          <h3 data-i18n="careers.process.c.title">Un problema concreto</h3>
+          <p data-i18n="careers.process.c.body">Guardiamo insieme un caso simile a quelli che affrontiamo. Interessa il ragionamento, non la risposta perfetta.</p>
+        </li>
+        <li class="step">
+          <p class="step__num">04</p>
+          <h3 data-i18n="careers.process.d.title">Proposta</h3>
+          <p data-i18n="careers.process.d.body">Condizioni, ruolo e primo progetto messi nero su bianco, con il tempo di pensarci.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- application form ---------------------------------------------------------- -->
+  <section class="band band--soft" id="candidatura">
+    <div class="container container--narrow">
+      <div class="section-head" data-reveal>
+        <p class="label" data-i18n="careers.apply.label">Candidatura</p>
+        <h2 data-i18n="careers.apply.title">Raccontateci qualcosa di vostro</h2>
+        <p class="lead" data-i18n="careers.apply.lead">Un progetto che avete costruito, un problema che vi ha fatto perdere il sonno. Vale più di un elenco di tecnologie.</p>
+      </div>
+
+      <form class="form" id="apply-form" data-validate data-success="apply-success" novalidate>
+        <div class="form__summary" id="apply-summary" role="alert" hidden>
+          <p data-i18n="form.summary.title">Prima di inviare, sistemate questi campi:</p>
+          <ul></ul>
+        </div>
+
+        <div class="form__row form__row--2">
+          <div class="field">
+            <label for="a-name" data-i18n="form.label.name">Nome e cognome *</label>
+            <input type="text" id="a-name" name="name" required autocomplete="name">
+            <p class="field__error" id="a-name-error"></p>
+          </div>
+          <div class="field">
+            <label for="a-email" data-i18n="form.label.email">Email *</label>
+            <input type="email" id="a-email" name="email" required autocomplete="email">
+            <p class="field__error" id="a-email-error"></p>
+          </div>
+        </div>
+
+        <div class="form__row form__row--2">
+          <div class="field">
+            <label for="a-role" data-i18n="form.label.role">Area di interesse *</label>
+            <select id="a-role" name="role" required>
+              <option value="" data-i18n="form.option.chooseRole">Scegliete un’area</option>
+              <option value="backend" data-i18n="careers.role.backend.title">Sviluppatore back-end</option>
+              <option value="data" data-i18n="careers.role.data.title">Data engineer</option>
+              <option value="crm" data-i18n="careers.role.crm.title">Consulente applicativo CRM</option>
+              <option value="frontend" data-i18n="careers.role.frontend.title">Sviluppatore front-end</option>
+              <option value="altro" data-i18n="form.option.other">Altro</option>
+            </select>
+            <p class="field__error" id="a-role-error"></p>
+          </div>
+          <div class="field">
+            <label for="a-link"><span data-i18n="form.label.link">Link a CV o profilo</span> <span class="optional" data-i18n="form.label.optional">(facoltativo)</span></label>
+            <input type="url" id="a-link" name="link" placeholder="https://" data-i18n-attr="placeholder:form.placeholder.link">
+            <p class="field__error" id="a-link-error"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="a-message" data-i18n="form.label.story">Raccontateci qualcosa *</label>
+          <textarea id="a-message" name="message" required></textarea>
+          <p class="field__error" id="a-message-error"></p>
+        </div>
+
+        <div class="field field--check">
+          <input type="checkbox" id="a-privacy" name="privacy" required>
+          <label for="a-privacy" data-i18n="form.label.privacyCv">Ho letto l’informativa privacy e acconsento al trattamento dei miei dati per la selezione. *</label>
+          <p class="field__error" id="a-privacy-error"></p>
+        </div>
+
+        <div>
+          <button class="btn btn--primary btn--lg" type="submit">
+            <span data-i18n="form.submit.apply">Invia la candidatura</span>
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form__note" data-i18n="form.note.demoCv">Questo è un concept: il modulo verifica i campi ma non invia nulla. Il canale vero resta info@b-brave.it</p>
+        </div>
+      </form>
+
+      <div class="form__success" id="apply-success" tabindex="-1" role="status" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/>
+        </svg>
+        <h3 data-i18n="careers.success.title">Candidatura pronta</h3>
+        <p data-i18n="careers.success.body">In un sito in produzione a questo punto sarebbe partita. Qui, per ora, scrivete direttamente a:</p>
+        <p><a class="link-arrow" href="mailto:info@b-brave.it">info@b-brave.it</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer band--ink">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="./index.html">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-linecap="round">
+              <circle cx="16" cy="16" r="13" stroke-width="1.6"/>
+              <path d="M16 16 16 3M16 16 27.3 9.5M16 16 6.3 24.7M16 3 4.7 9.5M27.3 9.5 25.7 24.7M25.7 24.7 6.3 24.7" stroke-width="1.2"/>
+            </g>
+            <g fill="currentColor">
+              <circle cx="16" cy="3" r="2"/><circle cx="27.3" cy="9.5" r="2"/>
+              <circle cx="25.7" cy="24.7" r="2"/><circle cx="6.3" cy="24.7" r="2"/>
+              <circle cx="4.7" cy="9.5" r="2"/><circle cx="16" cy="16" r="2.7"/>
+            </g>
+          </svg>
+          <span class="logo__word">b-brave</span>
+        </a>
+        <p class="footer__tagline" data-i18n="common.footer.tagline">Consulenza, progettazione e sviluppo software per Healthcare, Finance e Manufacturing.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/b-brave-software/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5M3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/bbravesrl/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav data-i18n-attr="aria-label:a11y.nav.footer" aria-label="Mappa del sito">
+        <h2 data-i18n="common.footer.sitemap">Sito</h2>
+        <div class="footer__links">
+          <a href="./we-do.html" data-i18n="common.nav.wedo">Cosa facciamo</a>
+          <a href="./we-are.html" data-i18n="common.nav.weare">Chi siamo</a>
+          <a href="./expertise.html" data-i18n="common.nav.expertise">Competenze</a>
+          <a href="./insights.html" data-i18n="common.nav.insights">Insights</a>
+          <a href="./careers.html" data-i18n="common.nav.careers">Lavora con noi</a>
+          <a href="./contacts.html" data-i18n="common.nav.contacts">Contatti</a>
+        </div>
+      </nav>
+
+      <div>
+        <h2 data-i18n="common.footer.contact">Contatti</h2>
+        <div class="footer__links">
+          <a href="mailto:info@b-brave.it">info@b-brave.it</a>
+          <span data-i18n="common.footer.address">Via E. Estrafallaces, 2 — 73100 Lecce</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p>Sede legale: Lecce — Via E. Estrafallaces, 2 · P. IVA 05142810752 · Registro Imprese Lecce 05142810752 C.C.I.A.A. Lecce · Capitale sociale Euro 40.000,00 i.v.</p>
+      <p>© <span id="year">2026</span> B-Brave S.r.l. · <span data-i18n="common.footer.nocookies">Questo concept non usa cookie e non raccoglie dati.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script defer src="./assets/js/i18n-dict.js"></script>
+<script defer src="./assets/js/i18n.js"></script>
+<script defer src="./assets/js/main.js"></script>
+</body>
+</html>
