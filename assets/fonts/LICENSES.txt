@@ -1,0 +1,19 @@
+Fonts bundled with this project
+===============================
+
+Instrument Sans — instrument-sans-variable-latin.woff2
+  Designers: Rodrigo Fuenzalida, Jordan Egstad
+  Licence: SIL Open Font License 1.1
+  https://openfontlicense.org
+
+DM Mono — dm-mono-500-latin.woff2
+  Designer: Colophon Foundry
+  Licence: SIL Open Font License 1.1
+  https://openfontlicense.org
+
+Both families are redistributable under the OFL. Only the latin subset is
+bundled (the full character set is not needed for Italian or English copy),
+which keeps the two files at roughly 45 KB combined.
+
+They are self-hosted rather than loaded from a CDN so that the pages work
+offline and make no third-party requests.
