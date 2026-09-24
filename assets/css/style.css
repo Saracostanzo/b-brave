@@ -1,7 +1,7 @@
 /* ===========================================================================
    b-brave — concept di restyling
 
-   Un foglio di stile solo, letto dall’alto in basso. L’ordine di lettura è
+   Un foglio di stile solo. L’ordine di lettura è
    anche l’ordine della cascata, quindi niente !important e nessuna regola
    più specifica di due classi.
 
@@ -11,12 +11,11 @@
      4. Header e menu    8. Blocchi di pagina
    =========================================================================== */
 
-/* --- 1. variabili ----------------------------------------------------------
-   Ogni valore usato nel sito nasce qui: nessuna regola più sotto si inventa un
-   colore, una misura o una durata.
+/* --- 1. variabili 
+   Ogni valore usato nel sito nasce qui
 
-   Regola da ricordare: --c-brand riempie, --c-brand-text scrive. Il rosso
-   pieno su fondo scuro sta a 3.5:1 e non passerebbe il contrasto minimo,
+   --c-brand riempie, --c-brand-text scrive
+    Il rosso pieno su fondo scuro sta a 3.5:1 e non passerebbe il contrasto minimo,
    quindi sul lato scuro la variabile di testo è schiarita.
    -------------------------------------------------------------------------- */
 
@@ -118,11 +117,11 @@
 [data-theme="light"] { color-scheme: light; }
 [data-theme="dark"]  { color-scheme: dark; }
 
-/* --- 2. font e reset -------------------------------------------------------- */
+/* --- 2. font e reset  */
 /* --- font ------------------------------------------------------------------
-   Stanno dentro il progetto invece di arrivare da Google: il sito funziona
+   Stanno dentro il progetto scaricati invece di arrivare da Google: il sito funziona
    offline e non fa nessuna richiesta a terzi.
-   -------------------------------------------------------------------------- */
+   */
 
 @font-face {
   font-family: "Instrument Sans";
@@ -242,7 +241,7 @@ strong { font-weight: 700; }
 
 .accent { color: var(--c-brand-text); }
 
-/* --- 3. testo, accessibilità e impalcatura ---------------------------------- */
+/* 3. testo, accessibilità e impalcatura */
 
 :focus-visible {
   outline: 2px solid var(--c-focus);
@@ -334,9 +333,8 @@ strong { font-weight: 700; }
 
 .stack > * + * { margin-top: var(--sp-4); }
 
-/* l'unico vezzo grafico di tutto il sito: il filetto rosso a sinistra del
-   titolo, che sfora di 24px sotto il blocco. "Go the extra mile" preso alla
-   lettera. */
+/* ùfiletto rosso a sinistra del
+   titolo. */
 .section-head {
   position: relative;
   max-width: var(--measure);
@@ -355,8 +353,7 @@ strong { font-weight: 700; }
 
 .section-head > * + * { margin-top: var(--sp-3); }
 
-/* comparsa allo scroll: agganciata a html.js, così senza JavaScript non
-   resta niente di nascosto */
+/* comparsa allo scroll: agganciata a html.js */
 
 .js [data-reveal] {
   opacity: 0;
@@ -376,7 +373,7 @@ strong { font-weight: 700; }
   }
 }
 
-/* --- 4. logo, header e menu ------------------------------------------------- */
+/* --- 4. logo, header e menu*/
 
 .logo {
   display: inline-flex;
@@ -596,8 +593,7 @@ strong { font-weight: 700; }
     scroll-snap-align: start;
   }
 
-  /* testo più piccolo, ma l'area da toccare resta 44px di altezza: la
-     riduzione sta nel carattere, non nel bersaglio del dito */
+
   .nav-list a {
     display: block;
     padding-block: 0.7rem;
@@ -618,7 +614,7 @@ strong { font-weight: 700; }
   .header__tools .header__cta { display: none; }
 }
 
-/* --- 5. bottoni, chip e card ------------------------------------------------ */
+/* 5. bottoni, chip e card */
 
 .btn {
   display: inline-flex;
@@ -810,7 +806,7 @@ strong { font-weight: 700; }
   background: var(--c-brand);
 }
 
-/* --- 6. moduli -------------------------------------------------------------- */
+/* --- 6. moduli */
 
 .form { display: grid; gap: var(--sp-5); }
 
@@ -935,7 +931,7 @@ strong { font-weight: 700; }
   color: var(--c-text-subtle);
 }
 
-/* --- 7. footer -------------------------------------------------------------- */
+/* --- 7. footer*/
 
 .footer { padding-block: var(--sp-8) var(--sp-6); }
 
@@ -1021,7 +1017,7 @@ strong { font-weight: 700; }
   }
 }
 
-/* --- 8. blocchi di pagina --------------------------------------------------- */
+/* --- 8. blocchi di pagina */
 
 /* testata usata da tutte le pagine tranne la home */
 .page-hero {
@@ -1188,9 +1184,7 @@ strong { font-weight: 700; }
   50%      { r: 8.5; }
 }
 
-/* scegliendo un settore si spengono gli altri due, il centro resta acceso.
-   Scritto come "spegni gli altri" e non "spegni tutto e riaccendi", così non
-   ci sono due regole che litigano sullo stesso elemento. */
+
 .graph[data-highlight="health"] :is(.g-finance, .g-manufacturing),
 .graph[data-highlight="finance"] :is(.g-health, .g-manufacturing),
 .graph[data-highlight="manufacturing"] :is(.g-health, .g-finance) { opacity: 0.14; }
@@ -1308,7 +1302,7 @@ strong { font-weight: 700; }
 
 .post h3 { font-size: var(--fs-lg); }
 
-/* --- blocchi usati dalle pagine interne ------------------------------------- */
+/* --- blocchi usati dalle pagine interne  */
 
 .tick-list {
   display: grid;
@@ -1348,7 +1342,7 @@ strong { font-weight: 700; }
 
 .chip-row--static { margin-top: var(--sp-4); }
 
-/* i diagrammi parlano tutti la stessa lingua: un solo spessore, una sola palette */
+/* i diagrammi  un solo spessore, una sola palette */
 
 .diagram { width: 100%; }
 

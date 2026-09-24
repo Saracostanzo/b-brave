@@ -1,14 +1,13 @@
 /* Tutti i testi del sito, nelle due lingue.
    L'italiano è la lingua di partenza: si scrive prima quello e poi si traduce,
-   mai il contrario. Le chiavi sono piatte e si leggono ambito.blocco.elemento.
-   Le due tabelle sono nello stesso ordine, così una stringa che manca si vede
+   mai il contrario. Le due tabelle sono nello stesso ordine, così una stringa che manca si vede
    a colpo d'occhio. */
 
 const TRANSLATIONS = {
 
   /* ====================== ITALIANO ====================== */
   it: {
-    /* --- accessibility --------------------------------------------------- */
+    /* --- accessibility ---------------- */
     'a11y.skip': 'Vai al contenuto',
     'a11y.nav.main': 'Navigazione principale',
     'a11y.nav.footer': 'Mappa del sito',
@@ -17,7 +16,7 @@ const TRANSLATIONS = {
     'a11y.theme': 'Cambia tema chiaro o scuro',
     'a11y.graph': 'Rete di nodi collegati che rappresenta i tre settori in cui lavoriamo',
 
-    /* --- navigation and shared actions ----------------------------------- */
+    /* --- navigation and shared actions  */
     'common.nav.wedo': 'Cosa facciamo',
     'common.nav.weare': 'Chi siamo',
     'common.nav.expertise': 'Competenze',
@@ -53,17 +52,17 @@ const TRANSLATIONS = {
     'common.footer.address': 'Via E. Estrafallaces, 2 — 73100 Lecce',
     'common.footer.nocookies': 'Questo concept non usa cookie e non raccoglie dati.',
 
-    /* --- form messages ---------------------------------------------------- */
+    /* --- form messages  */
     'form.error.required': 'questo campo è obbligatorio',
     'form.error.email': 'controllate l’indirizzo email',
     'form.error.invalid': 'il valore inserito non è valido',
     'form.summary.title': 'Prima di inviare, sistemate questi campi:',
 
-    /* --- meta -------------------------------------------------------------- */
+    /* --- meta ---------- */
     'meta.home.title': 'B-Brave — Partner tecnologico per Healthcare, Finance e Manufacturing',
     'meta.home.desc': 'B-Brave progetta, integra e mantiene software su misura per aziende dei settori Healthcare, Finance e Manufacturing. Sede a Lecce, progetti in tutta Italia.',
 
-    /* --- home -------------------------------------------------------------- */
+    /* --- home ---------- */
     'home.hero.eyebrow': 'Partner tecnologico · Lecce',
     'home.hero.title': 'Il <em class="accent">miglio in più</em> non è un modo di dire.',
     'home.hero.lead': 'Siamo il partner tecnologico che resta accanto alle aziende anche dopo il go-live. Integrazione di sistemi, dati e software su misura per Healthcare, Finance e Manufacturing.',
@@ -71,7 +70,7 @@ const TRANSLATIONS = {
     'home.hero.ctaGhost': 'Parliamo del vostro progetto',
     'home.hero.sectorsLabel': 'Dove lavoriamo',
 
-    /* --- hero sectors -------------------------------------------------------- */
+    /* --- hero sectors ---- */
     'home.hero.sectorDefault': 'Selezionate un settore per vedere dove interveniamo.',
     'home.hero.sector.health': 'Healthcare — fascicoli, referti e flussi clinici che restano tracciabili senza rubare tempo ai reparti.',
     'home.hero.sector.finance': 'Finance — dati che reggono un audit e processi commerciali che restano veloci.',
@@ -126,7 +125,7 @@ const TRANSLATIONS = {
     'home.insights.title': 'Quello che stiamo guardando',
     'home.insights.all': 'Tutti gli articoli',
 
-    /* --- articles ----------------------------------------------------------- */
+    /* --- articles ------- */
     'post.sellalab.title': 'B-Brave nell’ecosistema SellaLab',
     'post.sellalab.excerpt': 'Entriamo ufficialmente nella piattaforma di innovazione del gruppo Sella, che mette in rete PMI innovative e startup.',
     'post.bidigital.title': 'Empowerment digitale',
@@ -137,7 +136,7 @@ const TRANSLATIONS = {
     'post.data.excerpt': 'Orientarsi nel volume di dati che un’azienda produce ogni giorno, e trasformarne una parte in vantaggio competitivo.'
 ,
 
-    /* --- page metadata ------------------------------------------------------- */
+    /* --- page metadata --- */
     'meta.wedo.title': 'Cosa facciamo — B-Brave',
     'meta.wedo.desc': 'System integration, consulenza IT, outsourcing e soluzioni proprietarie: B-CRM, B-ETL, IoT e fascicolo sanitario. Servizi software per aziende.',
     'meta.weare.title': 'Chi siamo — B-Brave',
@@ -152,7 +151,7 @@ const TRANSLATIONS = {
     'meta.contacts.desc': 'Scriveteci o venite a trovarci a Lecce. Rispondiamo entro due giorni lavorativi a ogni richiesta di progetto, consulenza o collaborazione.'
 ,
 
-    /* --- forms --------------------------------------------------------------- */
+    /* --- forms ----------- */
     'form.label.name': 'Nome e cognome *',
     'form.label.company': 'Azienda *',
     'form.label.email': 'Email *',
@@ -175,7 +174,7 @@ const TRANSLATIONS = {
     'form.note.demoCv': 'Questo è un concept: il modulo verifica i campi ma non invia nulla. Il canale vero resta info@b-brave.it'
 ,
 
-    /* --- we do --------------------------------------------------------------- */
+    /* --- we do ----------- */
     'wedo.hero.eyebrow': 'Cosa facciamo',
     'wedo.hero.title': 'Consulenza, progettazione e sviluppo. In quest’ordine.',
     'wedo.hero.lead': 'Prima si capisce il processo, poi si disegna la soluzione, poi si scrive il codice. Saltare il primo passaggio è il modo più veloce per rifare tutto da capo.',
@@ -241,7 +240,7 @@ const TRANSLATIONS = {
     'wedo.models.c.body': 'Le nostre persone entrano nel vostro team e ne seguono i riti. Adatto quando servono competenze specifiche su un lavoro già avviato.'
 ,
 
-    /* --- we are -------------------------------------------------------------- */
+    /* --- we are ---------- */
     'weare.hero.eyebrow': 'Chi siamo',
     'weare.hero.title': 'Le opportunità incontrano la tecnologia.',
     'weare.hero.lead': 'B-Brave è una società di consulenza e progettazione software. Siamo nati per portare sul mercato competenze specifiche e per integrare le tecnologie digitali dentro le decisioni aziendali, non accanto.',
@@ -281,7 +280,7 @@ const TRANSLATIONS = {
     'weare.territory.alt': 'Cerchi concentrici con Lecce al centro e collegamenti verso l’esterno'
 ,
 
-    /* --- expertise ----------------------------------------------------------- */
+    /* --- expertise ------- */
     'expertise.hero.eyebrow': 'Competenze',
     'expertise.hero.title': 'Sei aree che nei progetti veri non stanno mai separate.',
     'expertise.hero.lead': 'Un cruscotto affidabile ha bisogno di dati puliti; dati puliti hanno bisogno di sistemi che si parlano. Per questo le trattiamo come un’unica competenza.',
@@ -333,7 +332,7 @@ const TRANSLATIONS = {
     'expertise.quality.g': 'Scalabilità'
 ,
 
-    /* --- careers ------------------------------------------------------------- */
+    /* --- careers  */
     'careers.hero.eyebrow': 'Lavora con noi',
     'careers.hero.title': 'Non cerchiamo curriculum perfetti. Cerchiamo persone che chiedono perché.',
     'careers.hero.lead': 'Lavoriamo su sistemi che le aziende usano tutti i giorni. Chi entra qui non guarda qualcuno lavorare: mette mano a cose che vanno in produzione.',
@@ -404,7 +403,7 @@ const TRANSLATIONS = {
     'careers.success.body': 'In un sito in produzione a questo punto sarebbe partita. Qui, per ora, scrivete direttamente a:'
 ,
 
-    /* --- insights and contacts ----------------------------------------------- */
+    /* --- insights and contacts ------------ */
     'insights.hero.eyebrow': 'Insights',
     'insights.hero.title': 'Quello che stiamo guardando.',
     'insights.hero.lead': 'Aggiornamenti dall’azienda e qualche riflessione sui temi che incontriamo nei progetti. Poco spesso, ma solo quando abbiamo qualcosa da dire.',
@@ -437,7 +436,7 @@ const TRANSLATIONS = {
     'contacts.data.capital': 'Capitale sociale'
 ,
 
-    /* --- runtime strings ----------------------------------------------------- */
+    /* --- runtime strings - */
     'common.footer.legal': 'Sede legale: Lecce — Via E. Estrafallaces, 2 · P. IVA 05142810752 · Registro Imprese Lecce 05142810752 C.C.I.A.A. Lecce · Capitale sociale Euro 40.000,00 i.v.',
     'form.short.privacy': 'Consenso privacy',
     'insights.count': 'Articoli visibili: {n}'
@@ -445,7 +444,7 @@ const TRANSLATIONS = {
 
   /* ====================== INGLESE ======================= */
   en: {
-    /* --- accessibility --------------------------------------------------- */
+    /* --- accessibility  */
     'a11y.skip': 'Skip to content',
     'a11y.nav.main': 'Main navigation',
     'a11y.nav.footer': 'Site map',
@@ -454,7 +453,7 @@ const TRANSLATIONS = {
     'a11y.theme': 'Switch between light and dark theme',
     'a11y.graph': 'A network of connected nodes representing the three sectors we work in',
 
-    /* --- navigation and shared actions ----------------------------------- */
+    /* --- navigation and shared actions  */
     'common.nav.wedo': 'What we do',
     'common.nav.weare': 'Who we are',
     'common.nav.expertise': 'Expertise',
@@ -490,17 +489,17 @@ const TRANSLATIONS = {
     'common.footer.address': 'Via E. Estrafallaces, 2 — 73100 Lecce, Italy',
     'common.footer.nocookies': 'This concept uses no cookies and collects no data.',
 
-    /* --- form messages ---------------------------------------------------- */
+    /* --- form messages  */
     'form.error.required': 'this field is required',
     'form.error.email': 'please check the email address',
     'form.error.invalid': 'that value is not valid',
     'form.summary.title': 'Please fix these fields before sending:',
 
-    /* --- meta -------------------------------------------------------------- */
+    /* --- meta ---------- */
     'meta.home.title': 'B-Brave — Technology partner for healthcare, finance and manufacturing',
     'meta.home.desc': 'B-Brave designs, integrates and maintains custom software for companies in healthcare, finance and manufacturing. Based in Lecce, working across Italy.',
 
-    /* --- home -------------------------------------------------------------- */
+    /* --- home ---------- */
     'home.hero.eyebrow': 'Technology partner · Lecce, Italy',
     'home.hero.title': 'Going the <em class="accent">extra mile</em> isn’t a figure of speech.',
     'home.hero.lead': 'We are the technology partner that stays with you after go-live. Systems integration, data and custom software for healthcare, finance and manufacturing.',
@@ -508,7 +507,7 @@ const TRANSLATIONS = {
     'home.hero.ctaGhost': 'Let’s talk about your project',
     'home.hero.sectorsLabel': 'Where we work',
 
-    /* --- hero sectors -------------------------------------------------------- */
+    /* --- hero sectors ---- */
     'home.hero.sectorDefault': 'Pick a sector to see where we come in.',
     'home.hero.sector.health': 'Healthcare — records, reports and clinical workflows that stay traceable without stealing time from the ward.',
     'home.hero.sector.finance': 'Finance — data that survives an audit and commercial processes that stay fast.',
@@ -563,7 +562,7 @@ const TRANSLATIONS = {
     'home.insights.title': 'What we are watching',
     'home.insights.all': 'All articles',
 
-    /* --- articles ----------------------------------------------------------- */
+    /* --- articles ------- */
     'post.sellalab.title': 'B-Brave joins the SellaLab ecosystem',
     'post.sellalab.excerpt': 'We are now officially part of the Sella group innovation platform, which connects innovative SMEs and startups.',
     'post.bidigital.title': 'Digital empowerment',
@@ -574,7 +573,7 @@ const TRANSLATIONS = {
     'post.data.excerpt': 'Finding your way through the volume of data a company produces daily, and turning part of it into an advantage.'
 ,
 
-    /* --- page metadata ------------------------------------------------------- */
+    /* --- page metadata --- */
     'meta.wedo.title': 'What we do — B-Brave',
     'meta.wedo.desc': 'Systems integration, IT consulting, outsourcing and our own platforms: B-CRM, B-ETL, IoT and clinical records. Software services for companies.',
     'meta.weare.title': 'Who we are — B-Brave',
@@ -589,7 +588,7 @@ const TRANSLATIONS = {
     'meta.contacts.desc': 'Write to us or come and see us in Lecce. We reply within two working days to every project, consulting or partnership enquiry.'
 ,
 
-    /* --- forms --------------------------------------------------------------- */
+    /* --- forms ----------- */
     'form.label.name': 'Full name *',
     'form.label.company': 'Company *',
     'form.label.email': 'Email *',
@@ -612,7 +611,7 @@ const TRANSLATIONS = {
     'form.note.demoCv': 'This is a concept: the form validates the fields but sends nothing. The real channel is info@b-brave.it'
 ,
 
-    /* --- we do --------------------------------------------------------------- */
+    /* --- we do ----------- */
     'wedo.hero.eyebrow': 'What we do',
     'wedo.hero.title': 'Consulting, design and development. In that order.',
     'wedo.hero.lead': 'First understand the process, then design the solution, then write the code. Skipping the first step is the fastest way to end up doing it all again.',
@@ -678,7 +677,7 @@ const TRANSLATIONS = {
     'wedo.models.c.body': 'Our people join your team and follow its rituals. It suits a specific skill gap on work already under way.'
 ,
 
-    /* --- we are -------------------------------------------------------------- */
+    /* --- we are ---------- */
     'weare.hero.eyebrow': 'Who we are',
     'weare.hero.title': 'Where opportunity meets technology.',
     'weare.hero.lead': 'B-Brave is a software consulting and design company. We started out to bring specific skills to the market and to build digital technology into business decisions, not alongside them.',
@@ -718,7 +717,7 @@ const TRANSLATIONS = {
     'weare.territory.alt': 'Concentric circles with Lecce at the centre and links reaching outwards'
 ,
 
-    /* --- expertise ----------------------------------------------------------- */
+    /* --- expertise ------- */
     'expertise.hero.eyebrow': 'Expertise',
     'expertise.hero.title': 'Six areas that never stay separate in a real project.',
     'expertise.hero.lead': 'A dashboard you can trust needs clean data; clean data needs systems that talk to each other. That is why we treat them as one discipline.',
@@ -770,7 +769,7 @@ const TRANSLATIONS = {
     'expertise.quality.g': 'Scalability'
 ,
 
-    /* --- careers ------------------------------------------------------------- */
+    /* --- careers --------- */
     'careers.hero.eyebrow': 'Join us',
     'careers.hero.title': 'We are not looking for perfect CVs. We are looking for people who ask why.',
     'careers.hero.lead': 'We work on systems companies use every day. Nobody here watches someone else work: you touch things that go into production.',
@@ -841,7 +840,7 @@ const TRANSLATIONS = {
     'careers.success.body': 'On a live site it would have been sent by now. Here, for the moment, write directly to:'
 ,
 
-    /* --- insights and contacts ----------------------------------------------- */
+    /* --- insights and contacts ------------ */
     'insights.hero.eyebrow': 'Insights',
     'insights.hero.title': 'What we are watching.',
     'insights.hero.lead': 'Company news and a few thoughts on the themes we meet in projects. Not often, but only when we have something to say.',
@@ -874,7 +873,7 @@ const TRANSLATIONS = {
     'contacts.data.capital': 'Share capital'
 ,
 
-    /* --- runtime strings ----------------------------------------------------- */
+    /* --- runtime strings - */
     'common.footer.legal': 'Registered office: Lecce — Via E. Estrafallaces, 2 · VAT 05142810752 · Lecce Companies Register 05142810752 C.C.I.A.A. Lecce · Share capital EUR 40,000.00 fully paid up',
     'form.short.privacy': 'Privacy consent',
     'insights.count': 'Articles shown: {n}'

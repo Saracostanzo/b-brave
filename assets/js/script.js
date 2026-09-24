@@ -1,6 +1,6 @@
 /* Tutto il comportamento del sito sta qui. Ogni blocco controlla prima che il
    suo markup esista, così lo stesso file serve tutte e sette le pagine.
-   Non c'è nemmeno un listener sullo scroll: dove serve sapere a che punto
+   Non c'è  un listener sullo scroll: dove serve sapere a che punto
    della pagina siamo uso IntersectionObserver, che è molto più leggero. */
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
