@@ -6,7 +6,6 @@
   'use strict';
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
 
   /* --- theme ------------------------------------------------------------- */
 
@@ -26,80 +25,6 @@
       var next = resolved() === 'dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = next;
       try { localStorage.setItem('bb-theme', next); } catch (e) {}
-    });
-  }
-
-  /* --- mobile navigation -------------------------------------------------- */
-
-  function initNav() {
-    var toggle = document.getElementById('nav-toggle');
-    var panel = document.getElementById('site-nav');
-    if (!toggle || !panel) return;
-
-    var main = document.getElementById('main');
-    var footer = document.querySelector('.footer');
-    var desktop = window.matchMedia('(min-width: 900px)');
-
-    function open() {
-      panel.classList.add('is-open');
-      toggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-      if (main) main.inert = true;
-      if (footer) footer.inert = true;
-      var first = panel.querySelector(FOCUSABLE);
-      if (first) first.focus();
-    }
-
-    function close(returnFocus) {
-      panel.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-      if (main) main.inert = false;
-      if (footer) footer.inert = false;
-      if (returnFocus) toggle.focus();
-    }
-
-    function isOpen() { return toggle.getAttribute('aria-expanded') === 'true'; }
-
-    toggle.addEventListener('click', function () {
-      if (isOpen()) { close(true); } else { open(); }
-    });
-
-    panel.addEventListener('click', function (event) {
-      if (event.target.closest('a')) close(false);
-    });
-
-    document.addEventListener('keydown', function (event) {
-      if (!isOpen()) return;
-
-      if (event.key === 'Escape') {
-        close(true);
-        return;
-      }
-
-      if (event.key !== 'Tab') return;
-
-      var items = Array.prototype.filter.call(
-        panel.querySelectorAll(FOCUSABLE),
-        function (el) { return el.offsetParent !== null; }
-      );
-      items.unshift(toggle);
-      if (!items.length) return;
-
-      var first = items[0];
-      var last = items[items.length - 1];
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    });
-
-    desktop.addEventListener('change', function (event) {
-      if (event.matches && isOpen()) close(false);
     });
   }
 
@@ -332,7 +257,6 @@
   }
 
   initTheme();
-  initNav();
   initHeaderState();
   initReveal();
   initHeroGraph();

@@ -16,7 +16,6 @@ window.I18N = {
     'a11y.nav.section': 'Navigazione della pagina',
     'a11y.lang.group': 'Lingua del sito',
     'a11y.theme': 'Cambia tema chiaro o scuro',
-    'a11y.menu': 'Apri o chiudi il menu',
     'a11y.graph': 'Rete di nodi collegati che rappresenta i tre settori in cui lavoriamo',
 
     /* --- navigation and shared actions ----------------------------------- */
@@ -450,7 +449,6 @@ window.I18N = {
     'a11y.nav.section': 'Page navigation',
     'a11y.lang.group': 'Site language',
     'a11y.theme': 'Switch between light and dark theme',
-    'a11y.menu': 'Open or close the menu',
     'a11y.graph': 'A network of connected nodes representing the three sectors we work in',
 
     /* --- navigation and shared actions ----------------------------------- */

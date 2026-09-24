@@ -165,68 +165,57 @@
   :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
 }
 
-/* --- 3. mobile panel ------------------------------------------------------ */
+/* --- 3. compact header ----------------------------------------------------
+   Below 900px the navigation does not hide behind a button: it moves onto its
+   own row under the logo and stays visible. Five links plus the call to
+   action fit on two rows, and nothing needs scripting to be reachable.
+   -------------------------------------------------------------------------- */
 
-.nav-toggle {
-  display: none;
-  place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid var(--c-border);
-  border-radius: var(--r-sm);
-  cursor: pointer;
+@media (min-width: 900px) {
+  .nav-list__cta { display: none; }
 }
 
-.nav-toggle svg { width: 1.25rem; height: 1.25rem; }
-.nav-toggle .icon-close { display: none; }
-.nav-toggle[aria-expanded="true"] .icon-open { display: none; }
-.nav-toggle[aria-expanded="true"] .icon-close { display: block; }
-
 @media (max-width: 899px) {
-  .nav-toggle { display: grid; }
+  /* two rows of chrome are too much to keep pinned on a phone */
+  .header {
+    position: static;
+    border-bottom-color: var(--c-border);
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+    gap: var(--sp-4);
+    min-height: 3.5rem;
+  }
 
   .header__nav {
-    position: fixed;
-    inset: var(--header-h) 0 0;
-    z-index: var(--z-panel);
-    display: none;
-    padding: var(--sp-6) var(--gutter) var(--sp-8);
-    background: var(--c-surface-1);
-    overflow-y: auto;
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    border-top: 1px solid var(--c-border);
   }
-
-  .header__nav.is-open { display: block; }
 
   .nav-list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    flex-wrap: wrap;
+    gap: var(--sp-3) var(--sp-5);
+    padding-block: var(--sp-3);
   }
 
-  .nav-list li + li { border-top: 1px solid var(--c-border); }
-
   .nav-list a {
-    display: block;
-    padding-block: var(--sp-4);
-    font-size: var(--fs-lg);
-    font-weight: 600;
+    padding-block: var(--sp-1);
     color: var(--c-text);
   }
 
-  .nav-list a::after { display: none; }
-
   .nav-list a[aria-current="page"] { color: var(--c-brand-text); }
 
-  .header__nav .btn {
-    margin-top: var(--sp-6);
-    width: 100%;
+  .nav-list__cta a {
+    padding: 0.3rem 0.9rem;
+    font-size: var(--fs-xs);
   }
 
-  .header__tools .header__cta { display: none; }
-}
+  .nav-list__cta a::after { display: none; }
 
-@media (min-width: 900px) {
-  .header__nav .btn--panel { display: none; }
+  .header__tools .header__cta { display: none; }
 }
 
 /* --- 4. buttons ----------------------------------------------------------- */
