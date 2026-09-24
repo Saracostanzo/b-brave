@@ -72,6 +72,12 @@ window.I18N = {
     'home.hero.ctaGhost': 'Parliamo del vostro progetto',
     'home.hero.sectorsLabel': 'Dove lavoriamo',
 
+    /* --- hero sectors -------------------------------------------------------- */
+    'home.hero.sectorDefault': 'Selezionate un settore per vedere dove interveniamo.',
+    'home.hero.sector.health': 'Healthcare — fascicoli, referti e flussi clinici che restano tracciabili senza rubare tempo ai reparti.',
+    'home.hero.sector.finance': 'Finance — dati che reggono un audit e processi commerciali che restano veloci.',
+    'home.hero.sector.manufacturing': 'Manufacturing — impianti collegati senza sostituirli, con i dati che arrivano dove servono.',
+
     'home.mile.label': 'Il metodo',
     'home.mile.title': 'Dove si vede il miglio in più',
     'home.mile.a.title': 'Il software si adatta ai vostri processi, non il contrario',
@@ -504,6 +510,12 @@ window.I18N = {
     'home.hero.ctaPrimary': 'What we do',
     'home.hero.ctaGhost': 'Let’s talk about your project',
     'home.hero.sectorsLabel': 'Where we work',
+
+    /* --- hero sectors -------------------------------------------------------- */
+    'home.hero.sectorDefault': 'Pick a sector to see where we come in.',
+    'home.hero.sector.health': 'Healthcare — records, reports and clinical workflows that stay traceable without stealing time from the ward.',
+    'home.hero.sector.finance': 'Finance — data that survives an audit and commercial processes that stay fast.',
+    'home.hero.sector.manufacturing': 'Manufacturing — plant connected without replacing it, and data that reaches where it is needed.',
 
     'home.mile.label': 'How we work',
     'home.mile.title': 'Where the extra mile shows',

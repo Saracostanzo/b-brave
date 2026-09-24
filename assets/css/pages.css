@@ -112,6 +112,16 @@
 .hero__sectors { margin-top: var(--sp-8); }
 .hero__sectors .label { margin-bottom: var(--sp-3); }
 
+/* reserved height, so selecting a sector does not shift the page */
+.hero__note {
+  margin-top: var(--sp-4);
+  max-width: 48ch;
+  min-height: 3.2em;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-lead);
+  color: var(--c-text-muted);
+}
+
 /* the brand-derived network graph */
 
 .graph {
@@ -159,14 +169,12 @@
   50%      { r: 8.5; }
 }
 
-/* a highlighted sector dims the rest of the network */
-.graph[data-highlight] .graph__edges g,
-.graph[data-highlight] .graph__nodes g { opacity: 0.16; }
-
-.graph[data-highlight="health"] .g-health,
-.graph[data-highlight="finance"] .g-finance,
-.graph[data-highlight="manufacturing"] .g-manufacturing,
-.graph[data-highlight] .g-core { opacity: 1; }
+/* selecting a sector dims the other two clusters; the core always stays lit.
+   Written as "dim the others" rather than "dim everything, then restore",
+   so there are no two rules fighting over the same element. */
+.graph[data-highlight="health"] :is(.g-finance, .g-manufacturing),
+.graph[data-highlight="finance"] :is(.g-health, .g-manufacturing),
+.graph[data-highlight="manufacturing"] :is(.g-health, .g-finance) { opacity: 0.14; }
 
 @media (prefers-reduced-motion: reduce) {
   .js .graph__edges line { stroke-dashoffset: 0; animation: none; }

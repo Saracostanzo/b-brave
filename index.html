@@ -102,10 +102,11 @@
         <div class="hero__sectors">
           <p class="label" data-i18n="home.hero.sectorsLabel">Dove lavoriamo</p>
           <div class="chip-row" id="sector-chips">
-            <button class="chip" type="button" data-sector="health" data-i18n="common.sector.health">Healthcare</button>
-            <button class="chip" type="button" data-sector="finance" data-i18n="common.sector.finance">Finance</button>
-            <button class="chip" type="button" data-sector="manufacturing" data-i18n="common.sector.manufacturing">Manufacturing</button>
+            <button class="chip" type="button" aria-pressed="false" data-sector="health" data-desc="home.hero.sector.health" data-i18n="common.sector.health">Healthcare</button>
+            <button class="chip" type="button" aria-pressed="false" data-sector="finance" data-desc="home.hero.sector.finance" data-i18n="common.sector.finance">Finance</button>
+            <button class="chip" type="button" aria-pressed="false" data-sector="manufacturing" data-desc="home.hero.sector.manufacturing" data-i18n="common.sector.manufacturing">Manufacturing</button>
           </div>
+          <p class="hero__note" id="sector-note" aria-live="polite" data-i18n="home.hero.sectorDefault">Selezionate un settore per vedere dove interveniamo.</p>
         </div>
       </div>
 

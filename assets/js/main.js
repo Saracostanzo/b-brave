@@ -71,28 +71,34 @@
   function initHeroGraph() {
     var graph = document.getElementById('hero-graph');
     var chips = document.getElementById('sector-chips');
+    var note = document.getElementById('sector-note');
     if (!graph || !chips) return;
 
-    function highlight(value) {
-      if (value) {
-        graph.dataset.highlight = value;
-      } else {
-        delete graph.dataset.highlight;
-      }
+    var DEFAULT_NOTE = 'home.hero.sectorDefault';
+    var buttons = chips.querySelectorAll('[data-sector]');
+
+    // the key stays on the element so the language switch retranslates it
+    function say(key) {
+      if (!note) return;
+      note.setAttribute('data-i18n', key);
+      if (window.I18N_T) note.textContent = window.I18N_T(key);
     }
 
-    chips.querySelectorAll('[data-sector]').forEach(function (chip) {
-      var sector = chip.dataset.sector;
-      chip.addEventListener('mouseenter', function () { highlight(sector); });
-      chip.addEventListener('focus', function () { highlight(sector); });
-      chip.addEventListener('mouseleave', function () { highlight(null); });
-      chip.addEventListener('blur', function () { highlight(null); });
+    buttons.forEach(function (chip) {
       chip.addEventListener('click', function () {
-        var active = graph.dataset.highlight === sector && chip.getAttribute('aria-pressed') === 'true';
-        chips.querySelectorAll('[data-sector]').forEach(function (other) {
-          other.setAttribute('aria-pressed', String(!active && other === chip));
+        var select = chip.getAttribute('aria-pressed') !== 'true';
+
+        buttons.forEach(function (other) {
+          other.setAttribute('aria-pressed', String(select && other === chip));
         });
-        highlight(active ? null : sector);
+
+        if (select) {
+          graph.dataset.highlight = chip.dataset.sector;
+          say(chip.dataset.desc);
+        } else {
+          delete graph.dataset.highlight;
+          say(DEFAULT_NOTE);
+        }
       });
     });
   }
