@@ -12,16 +12,16 @@
   color-scheme: light dark;
 
   /* --- surfaces -------------------------------------------------------- */
-  --c-surface-1:   light-dark(#FAF8F5, #14110F); /* page */
+  --c-surface-1:   light-dark(#FAF7F5, #16100F); /* page */
   --c-surface-0:   light-dark(#FFFFFF, #1C1816); /* cards, raised */
-  --c-surface-2:   light-dark(#F2EEE9, #221D1A); /* alternating bands */
-  --c-surface-3:   light-dark(#E8E2DA, #2A2421); /* rare, deep sand */
+  --c-surface-2:   light-dark(#F6EEEC, #251B1A); /* alternating bands */
+  --c-surface-3:   light-dark(#EDE0DD, #2E2221); /* rare, deep sand */
   --c-surface-ink: light-dark(#1C1917, #221D1A); /* inverted band */
 
   /* --- text ------------------------------------------------------------ */
   --c-text:        light-dark(#1C1917, #F2EDE7);
   --c-text-muted:  light-dark(#57514D, #B4AAA2);
-  --c-text-subtle: light-dark(#756D68, #968C85);
+  --c-text-subtle: light-dark(#706862, #968C85);
   --c-text-invert: light-dark(#FAF8F5, #F2EDE7);
 
   /* --- brand ----------------------------------------------------------- */
@@ -33,8 +33,8 @@
   --c-brand-tint-2: light-dark(#F0D4D6, #3A1D20);
 
   /* --- lines and focus -------------------------------------------------- */
-  --c-border:        light-dark(#E4DED6, #2E2825);
-  --c-border-strong: light-dark(#CFC7BD, #3D3532);
+  --c-border:        light-dark(#E8DCD8, #322726);
+  --c-border-strong: light-dark(#D6C6C1, #403332);
   --c-focus:         light-dark(#7E1F27, #FFD9DC);
 
   /* --- type ------------------------------------------------------------ */

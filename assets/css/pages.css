@@ -132,6 +132,10 @@
   overflow: visible;
 }
 
+.graph__halo {
+  fill: var(--c-brand-tint);
+}
+
 .graph__ring {
   fill: none;
   stroke: var(--c-border-strong);

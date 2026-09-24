@@ -333,6 +333,7 @@
 .tag {
   display: inline-block;
   padding: 0.25rem 0.6rem;
+  border: 1px solid var(--c-brand-tint-2);
   border-radius: var(--r-xs);
   background: var(--c-brand-tint);
   font-family: var(--font-mono);
