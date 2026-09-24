@@ -1,4 +1,0 @@
-# Questo sito è un concept di restyling, non il sito ufficiale di B-Brave.
-# Non deve comparire nei motori di ricerca né sostituirsi a b-brave.it.
-User-agent: *
-Disallow: /

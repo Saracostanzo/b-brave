@@ -1,17 +1,8 @@
-# OneDrive / Windows
+# Windows / OneDrive
 desktop.ini
 Thumbs.db
-ehthumbs.db
-~$*
 
-# macOS
-.DS_Store
-
-# Editors
+# Editor
 .vscode/
 .idea/
-*.swp
-
-# Build output of the delivery zip
-b-brave-concept.zip
 .claude/
