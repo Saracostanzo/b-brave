@@ -57,7 +57,7 @@ Ho fatto un giro sul sito attuale prima di partire. Non per fare le pulci, ma pe
 | Qualche refuso nei testi in pagina ("Accompanyes", "Trasformation", "Analyitcs") | Testi riscritti e riletti in entrambe le lingue |
 | L'indirizzo dei contatti è `/contatcts/` | `contacts.html` |
 | Nei contatti non compaiono né email né telefono | Recapiti in evidenza, in cima alla pagina |
-| 42 richieste, 82 script e 30 fogli di stile solo per la home | 11 richieste e circa 190 KB in tutto, font compresi, zero librerie esterne |
+| 42 richieste, 82 script e 30 fogli di stile solo per la home | 7 richieste e circa 185 KB in tutto, font compresi, zero librerie esterne |
 | Uno script pubblicitario (AdSense) su un sito B2B | Niente pubblicità, niente tracciamento |
 | Un widget di accessibilità sovrapposto alle pagine | Accessibilità scritta nel codice invece che appiccicata sopra |
 | Footer "Copyright 2023" | L'anno si aggiorna da solo |
@@ -65,7 +65,7 @@ Ho fatto un giro sul sito attuale prima di partire. Non per fare le pulci, ma pe
 
 ## Come l'ho fatto
 
-HTML, CSS e JavaScript scritti a mano. Nessun framework, nessuna dipendenza, niente da compilare: quello che c'è nella cartella è esattamente quello che gira nel browser.
+HTML, CSS e JavaScript scritti a mano. Nessun framework, nessuna dipendenza, niente da compilare: quello che c'è nella cartella è esattamente quello che gira nel browser. In tutto sono sette pagine, un foglio di stile, due file JavaScript (uno è solo il dizionario dei testi) e due font.
 
 Qualche scelta che vale la pena raccontare:
 
@@ -75,7 +75,7 @@ Qualche scelta che vale la pena raccontare:
 - **Su telefono il menu non si nasconde dietro un pulsante**: le voci stanno in orizzontale sotto il logo, sempre visibili. Un sito di sette pagine non ha bisogno di un pannello che si apre, e un pannello che si apre è una cosa in più che può sembrare rotta.
 - **Tutto è usabile da tastiera** e con lettore di schermo: link di salto al contenuto, focus sempre visibile, stati annunciati sui filtri e sui moduli. Il contrasto dei testi rispetta le linee guida WCAG AA — ho ricontrollato tutte le coppie dopo aver scaldato i fondi (il rosso su bianco è 5.4:1, il grigio più chiaro che uso è 4.8:1; sul fondo scuro il rosso diventa più chiaro, altrimenti non passerebbe).
 - **Le animazioni si spengono da sole** se nel sistema è attiva l'opzione "riduci animazioni".
-- **Il sito è pubblicato con `noindex`** e un `robots.txt` che blocca tutto: è un concept, non deve finire nei risultati di Google accanto (o al posto) di b-brave.it.
+- **Ogni pagina è marcata `noindex`**: è un concept, non deve finire nei risultati di Google accanto (o al posto) di b-brave.it.
 - Il sito funziona anche **con JavaScript disattivato**: si perdono solo l'interruttore della lingua e il menu a tendina del mobile.
 
 ## Cose che ho lasciato in sospeso
