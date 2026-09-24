@@ -38,7 +38,7 @@ Siete un partner tecnologico che parla con direzioni aziendali di sanità, finan
 
 Tre scelte che tengono insieme il resto:
 
-**Il rosso si usa poco, quindi si vede.** In tutto il sito c'è una sola fascia rossa piena, sulla home. Per il resto il rosso sta sui pulsanti, sulle etichette piccole e su qualche parola chiave. Quando un colore è ovunque smette di significare qualcosa.
+**Il rosso apre e chiude.** Un filetto rosso in cima a ogni pagina, una fascia piena che la chiude, e in mezzo il rosso su pulsanti, etichette, numeri e qualche parola chiave. Anche i fondi chiari sono virati leggermente verso il rosso, invece di restare grigi. Quello che resta fuori sono i blocchi di testo lunghi: se il colore è ovunque smette di significare qualcosa.
 
 **Il vostro marchio è diventato il filo conduttore.** Ho ridisegnato la sfera di nodi del logo in vettoriale, e da quella è nata l'immagine dell'hero: una rete che si disegna al caricamento. Se passi il mouse su Healthcare, Finance o Manufacturing, la rete accende solo il pezzo che riguarda quel settore.
 
@@ -72,7 +72,8 @@ Qualche scelta che vale la pena raccontare:
 - **I font sono dentro il progetto**, non caricati da Google. Oltre a essere più veloce, evita di mandare l'indirizzo IP dei visitatori a un server esterno — che in Italia è un tema di privacy reale.
 - **Zero servizi di terze parti**, quindi zero cookie: non serve nemmeno il banner del consenso.
 - **La mappa dei contatti è disegnata da me**, non è un riquadro di Google Maps. Stesso risultato per chi guarda, senza chiamate esterne. Il link "Apri in Maps" c'è comunque.
-- **Tutto è usabile da tastiera** e con lettore di schermo: link di salto al contenuto, focus sempre visibile, menu mobile che non lascia scappare il cursore. Il contrasto dei testi rispetta le linee guida WCAG AA (il rosso su bianco è 5.4:1; sul fondo scuro uso una tonalità più chiara, altrimenti non passerebbe).
+- **Su telefono il menu non si nasconde dietro un pulsante**: le voci stanno in orizzontale sotto il logo, sempre visibili. Un sito di sette pagine non ha bisogno di un pannello che si apre, e un pannello che si apre è una cosa in più che può sembrare rotta.
+- **Tutto è usabile da tastiera** e con lettore di schermo: link di salto al contenuto, focus sempre visibile, stati annunciati sui filtri e sui moduli. Il contrasto dei testi rispetta le linee guida WCAG AA — ho ricontrollato tutte le coppie dopo aver scaldato i fondi (il rosso su bianco è 5.4:1, il grigio più chiaro che uso è 4.8:1; sul fondo scuro il rosso diventa più chiaro, altrimenti non passerebbe).
 - **Le animazioni si spengono da sole** se nel sistema è attiva l'opzione "riduci animazioni".
 - **Il sito è pubblicato con `noindex`** e un `robots.txt` che blocca tutto: è un concept, non deve finire nei risultati di Google accanto (o al posto) di b-brave.it.
 - Il sito funziona anche **con JavaScript disattivato**: si perdono solo l'interruttore della lingua e il menu a tendina del mobile.
