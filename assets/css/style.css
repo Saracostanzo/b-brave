@@ -573,7 +573,7 @@ strong { font-weight: 700; }
     position: absolute;
     inset-block: 1px 0;
     right: 0;
-    width: var(--sp-6);
+    width: var(--sp-5);
     pointer-events: none;
     background: linear-gradient(to right, transparent, var(--c-surface-1));
   }
@@ -582,8 +582,8 @@ strong { font-weight: 700; }
      non vanno a capo */
   .nav-list {
     flex-wrap: nowrap;
-    gap: var(--sp-5);
-    padding-block: var(--sp-3);
+    gap: var(--sp-4);
+    padding-block: var(--sp-1);
     overflow-x: auto;
     scrollbar-width: none;
     scroll-snap-type: x proximity;
@@ -596,8 +596,12 @@ strong { font-weight: 700; }
     scroll-snap-align: start;
   }
 
+  /* testo più piccolo, ma l'area da toccare resta 44px di altezza: la
+     riduzione sta nel carattere, non nel bersaglio del dito */
   .nav-list a {
-    padding-block: var(--sp-1);
+    display: block;
+    padding-block: 0.7rem;
+    font-size: var(--fs-xs);
     white-space: nowrap;
     color: var(--c-text);
   }
@@ -605,7 +609,7 @@ strong { font-weight: 700; }
   .nav-list a[aria-current="page"] { color: var(--c-brand-text); }
 
   .nav-list__cta a {
-    padding: 0.3rem 0.85rem;
+    padding: 0.45rem 0.9rem;
     font-size: var(--fs-2xs);
   }
 
