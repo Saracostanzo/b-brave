@@ -11,12 +11,12 @@
      4. Header e menu    8. Blocchi di pagina
    =========================================================================== */
 
-/* --- 1. variabili 
-   Ogni valore usato nel sito nasce qui
+/* --- 1. variabili ----------------------------------------------------------
+   Ogni valore usato nel sito nasce qui.
 
-   --c-brand riempie, --c-brand-text scrive
-    Il rosso pieno su fondo scuro sta a 3.5:1 e non passerebbe il contrasto minimo,
-   quindi sul lato scuro la variabile di testo è schiarita.
+   --c-brand riempie, --c-brand-text scrive: il rosso pieno su fondo scuro sta
+   a 3.5:1 e non passerebbe il contrasto minimo, quindi sul lato scuro la
+   variabile di testo è schiarita.
    -------------------------------------------------------------------------- */
 
 :root {
@@ -117,7 +117,7 @@
 [data-theme="light"] { color-scheme: light; }
 [data-theme="dark"]  { color-scheme: dark; }
 
-/* --- 2. font e reset  */
+/* --- 2. font e reset ----------------------------------------------------- */
 /* --- font ------------------------------------------------------------------
    Stanno dentro il progetto scaricati invece di arrivare da Google: il sito funziona
    offline e non fa nessuna richiesta a terzi.
@@ -241,7 +241,7 @@ strong { font-weight: 700; }
 
 .accent { color: var(--c-brand-text); }
 
-/* 3. testo, accessibilità e impalcatura */
+/* --- 3. testo, accessibilità e impalcatura ------------------------------- */
 
 :focus-visible {
   outline: 2px solid var(--c-focus);
@@ -333,8 +333,8 @@ strong { font-weight: 700; }
 
 .stack > * + * { margin-top: var(--sp-4); }
 
-/* ùfiletto rosso a sinistra del
-   titolo. */
+/* il filetto rosso a sinistra del titolo sfora di 24px sotto il blocco:
+   "Go the extra mile" preso alla lettera */
 .section-head {
   position: relative;
   max-width: var(--measure);
@@ -373,7 +373,7 @@ strong { font-weight: 700; }
   }
 }
 
-/* --- 4. logo, header e menu*/
+/* --- 4. logo, header e menu ---------------------------------------------- */
 
 .logo {
   display: inline-flex;
@@ -614,7 +614,7 @@ strong { font-weight: 700; }
   .header__tools .header__cta { display: none; }
 }
 
-/* 5. bottoni, chip e card */
+/* --- 5. bottoni, chip e card --------------------------------------------- */
 
 .btn {
   display: inline-flex;
@@ -806,7 +806,7 @@ strong { font-weight: 700; }
   background: var(--c-brand);
 }
 
-/* --- 6. moduli */
+/* --- 6. moduli ----------------------------------------------------------- */
 
 .form { display: grid; gap: var(--sp-5); }
 
@@ -931,7 +931,7 @@ strong { font-weight: 700; }
   color: var(--c-text-subtle);
 }
 
-/* --- 7. footer*/
+/* --- 7. footer ----------------------------------------------------------- */
 
 .footer { padding-block: var(--sp-8) var(--sp-6); }
 
@@ -1017,7 +1017,7 @@ strong { font-weight: 700; }
   }
 }
 
-/* --- 8. blocchi di pagina */
+/* --- 8. blocchi di pagina ------------------------------------------------ */
 
 /* testata usata da tutte le pagine tranne la home */
 .page-hero {
@@ -1184,7 +1184,8 @@ strong { font-weight: 700; }
   50%      { r: 8.5; }
 }
 
-
+/* spengo solo gli altri due invece di spegnere tutto e riaccendere: così non
+   ci sono due regole che litigano sullo stesso elemento */
 .graph[data-highlight="health"] :is(.g-finance, .g-manufacturing),
 .graph[data-highlight="finance"] :is(.g-health, .g-manufacturing),
 .graph[data-highlight="manufacturing"] :is(.g-health, .g-finance) { opacity: 0.14; }
