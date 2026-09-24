@@ -12,11 +12,11 @@
 <meta property="og:image" content="./assets/img/og-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./assets/css/tokens.css">
-<link rel="stylesheet" href="./assets/css/base.css">
-<link rel="stylesheet" href="./assets/css/components.css">
-<link rel="stylesheet" href="./assets/css/pages.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 <script>
+  /* applico tema e lingua salvati prima che la pagina si disegni, così non
+     si vede il cambio. La classe js serve al CSS per sapere che lo scripting
+     c'è: senza, non nasconde niente in attesa dell'animazione. */
   document.documentElement.classList.add('js');
   try {
     var t = localStorage.getItem('bb-theme');
@@ -83,7 +83,7 @@
 
 <main id="main">
 
-  <!-- hero ---------------------------------------------------------------- -->
+  <!-- hero ---------------------------------------------------------------------- -->
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__text">
@@ -160,7 +160,7 @@
     </div>
   </section>
 
-  <!-- extra mile ---------------------------------------------------------- -->
+  <!-- il miglio in più ---------------------------------------------------------- -->
   <section class="band band--soft" id="metodo">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -188,7 +188,7 @@
     </div>
   </section>
 
-  <!-- sectors ------------------------------------------------------------- -->
+  <!-- settori ------------------------------------------------------------------- -->
   <section class="band" id="settori">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -240,7 +240,7 @@
     </div>
   </section>
 
-  <!-- capabilities -------------------------------------------------------- -->
+  <!-- competenze ---------------------------------------------------------------- -->
   <section class="band band--soft" id="competenze">
     <div class="container capabilities">
       <div class="capabilities__head">
@@ -292,7 +292,7 @@
     </div>
   </section>
 
-  <!-- proof --------------------------------------------------------------- -->
+  <!-- fatti, non slogan --------------------------------------------------------- -->
   <section class="band" id="prova">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -317,7 +317,7 @@
     </div>
   </section>
 
-  <!-- the one red band ----------------------------------------------------- -->
+  <!-- la fascia rossa ----------------------------------------------------------- -->
   <section class="band band--brand statement">
     <div class="container container--narrow">
       <h2 data-i18n="home.statement.title">La trasformazione digitale non è un progetto. È un modo di lavorare.</h2>
@@ -329,7 +329,7 @@
     </div>
   </section>
 
-  <!-- insights ------------------------------------------------------------- -->
+  <!-- insights ------------------------------------------------------------------ -->
   <section class="band" id="articoli">
     <div class="container">
       <div class="section-head section-head--split" data-reveal>
@@ -363,7 +363,7 @@
     </div>
   </section>
 
-  <!-- manifesto ------------------------------------------------------------ -->
+  <!-- manifesto ----------------------------------------------------------------- -->
   <section class="band band--ink manifesto">
     <div class="container container--narrow">
       <blockquote>
@@ -373,7 +373,7 @@
     </div>
   </section>
 
-  <!-- closing cta ---------------------------------------------------------- -->
+  <!-- chiusura ------------------------------------------------------------------ -->
   <section class="band band--brand closing">
     <div class="container container--narrow">
       <h2 data-i18n="common.closing.title">Raccontateci il problema, non la soluzione.</h2>
@@ -444,8 +444,7 @@
   </div>
 </footer>
 
-<script defer src="./assets/js/i18n-dict.js"></script>
-<script defer src="./assets/js/i18n.js"></script>
-<script defer src="./assets/js/main.js"></script>
+<script defer src="./assets/js/translations.js"></script>
+<script defer src="./assets/js/script.js"></script>
 </body>
 </html>

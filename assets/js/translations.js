@@ -1,13 +1,12 @@
-/* Bilingual copy. Italian is the source language: it is written first and
-   translated afterwards, never the other way round. Keys are flat and read
-   scope.block.element. Keep the two tables in the same order so a missing
-   string is visible at a glance. */
+/* Tutti i testi del sito, nelle due lingue.
+   L'italiano è la lingua di partenza: si scrive prima quello e poi si traduce,
+   mai il contrario. Le chiavi sono piatte e si leggono ambito.blocco.elemento.
+   Le due tabelle sono nello stesso ordine, così una stringa che manca si vede
+   a colpo d'occhio. */
 
-window.I18N = {
+const TRANSLATIONS = {
 
-  /* ======================================================================
-     ITALIANO
-     ====================================================================== */
+  /* ====================== ITALIANO ====================== */
   it: {
     /* --- accessibility --------------------------------------------------- */
     'a11y.skip': 'Vai al contenuto',
@@ -444,9 +443,7 @@ window.I18N = {
     'insights.count': 'Articoli visibili: {n}'
   },
 
-  /* ======================================================================
-     ENGLISH
-     ====================================================================== */
+  /* ====================== INGLESE ======================= */
   en: {
     /* --- accessibility --------------------------------------------------- */
     'a11y.skip': 'Skip to content',

@@ -12,11 +12,11 @@
 <meta property="og:image" content="./assets/img/og-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./assets/css/tokens.css">
-<link rel="stylesheet" href="./assets/css/base.css">
-<link rel="stylesheet" href="./assets/css/components.css">
-<link rel="stylesheet" href="./assets/css/pages.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 <script>
+  /* applico tema e lingua salvati prima che la pagina si disegni, così non
+     si vede il cambio. La classe js serve al CSS per sapere che lo scripting
+     c'è: senza, non nasconde niente in attesa dell'animazione. */
   document.documentElement.classList.add('js');
   try {
     var t = localStorage.getItem('bb-theme');
@@ -82,7 +82,7 @@
 </header>
 
 <main id="main">
-  <!-- page hero ------------------------------------------------------------ -->
+  <!-- testata ------------------------------------------------------------------- -->
   <section class="page-hero">
     <div class="container">
       <div class="page-hero__inner">
@@ -99,7 +99,7 @@
     </div>
   </section>
 
-  <!-- why here ---------------------------------------------------------------- -->
+  <!-- perché qui ---------------------------------------------------------------- -->
   <section class="band" id="perche">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -137,7 +137,7 @@
     </div>
   </section>
 
-  <!-- roles -------------------------------------------------------------------- -->
+  <!-- profili ------------------------------------------------------------------- -->
   <section class="band band--soft" id="profili">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -254,7 +254,7 @@
     </div>
   </section>
 
-  <!-- process ------------------------------------------------------------------ -->
+  <!-- selezione ----------------------------------------------------------------- -->
   <section class="band" id="selezione">
     <div class="container">
       <div class="section-head" data-reveal>
@@ -287,7 +287,7 @@
     </div>
   </section>
 
-  <!-- application form ---------------------------------------------------------- -->
+  <!-- candidatura --------------------------------------------------------------- -->
   <section class="band band--soft" id="candidatura">
     <div class="container container--narrow">
       <div class="section-head" data-reveal>
@@ -425,8 +425,7 @@
   </div>
 </footer>
 
-<script defer src="./assets/js/i18n-dict.js"></script>
-<script defer src="./assets/js/i18n.js"></script>
-<script defer src="./assets/js/main.js"></script>
+<script defer src="./assets/js/translations.js"></script>
+<script defer src="./assets/js/script.js"></script>
 </body>
 </html>
