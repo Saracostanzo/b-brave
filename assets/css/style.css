@@ -560,28 +560,53 @@ strong { font-weight: 700; }
   }
 
   .header__nav {
+    position: relative;
     order: 3;
     width: 100%;
     margin-left: 0;
     border-top: 1px solid var(--c-border);
   }
 
+  /* la sfumatura a destra dice che il menu continua oltre il bordo */
+  .header__nav::after {
+    content: "";
+    position: absolute;
+    inset-block: 1px 0;
+    right: 0;
+    width: var(--sp-6);
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--c-surface-1));
+  }
+
+  /* una riga sola che scorre di lato: se le voci non entrano si trascinano,
+     non vanno a capo */
   .nav-list {
-    flex-wrap: wrap;
-    gap: var(--sp-3) var(--sp-5);
+    flex-wrap: nowrap;
+    gap: var(--sp-5);
     padding-block: var(--sp-3);
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+
+  .nav-list::-webkit-scrollbar { display: none; }
+
+  .nav-list li {
+    flex: none;
+    scroll-snap-align: start;
   }
 
   .nav-list a {
     padding-block: var(--sp-1);
+    white-space: nowrap;
     color: var(--c-text);
   }
 
   .nav-list a[aria-current="page"] { color: var(--c-brand-text); }
 
   .nav-list__cta a {
-    padding: 0.3rem 0.9rem;
-    font-size: var(--fs-xs);
+    padding: 0.3rem 0.85rem;
+    font-size: var(--fs-2xs);
   }
 
   .nav-list__cta a::after { display: none; }

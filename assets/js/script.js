@@ -90,6 +90,10 @@ $('#theme-toggle')?.addEventListener('click', () => {
   remember('bb-theme', next);
 });
 
+/* su telefono il menu scorre di lato: porto in vista la voce della pagina in
+   cui siamo, altrimenti su alcune pagine resta fuori dallo schermo */
+$('.nav-list a[aria-current="page"]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
+
 /* --- il filetto sotto l'header compare quando la pagina si muove ----------- */
 
 const header = $('#site-header');
